@@ -38,7 +38,7 @@ def main():
 	# define publisher
 	params_pub = rospy.Publisher('/sphere_params', SphereParams, queue_size = 1)
 	# set the loop frequency
-	rate = rospy.Rate(1)
+	rate = rospy.Rate(10)
 
 	while not rospy.is_shutdown():
 		if points_received:
